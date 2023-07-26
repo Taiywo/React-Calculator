@@ -1,0 +1,58 @@
+:root {
+ color: rgba(255, 255, 255, 0.87);
+ font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Causten';
+  src:url("./fonts/Causten-Semi-Bold.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Core';
+  src: url("./fonts/Core-sans.otf") format('truetype ');
+}
+
+.calculator {
+  width: 240px;
+  border: 1px solid #404040;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.display {
+  font-size: 24px;
+  padding: 8px;
+  background-color: #fdfdfd;
+  color: #b700ff;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #000000;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #6f00b8;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9803fb;
+  color: #a5a5a5;
+}
